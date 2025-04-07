@@ -49,3 +49,8 @@ Create a `.env` file or input them in the Gradio UI:
 ```env
 SERPAPI_KEY=your-serpapi-key
 TOGETHER_API_KEY=your-together-key
+
+
+## 📦 Installation (if running locally)
+
+pip install -r requirements.txt
