@@ -1,18 +1,51 @@
-# Multi-Agent-RAG-System-for-Scientific-Research-
-LangGraph-based research assistant with FAISS & LLaMA-4 summarization
+# 🔬 Multi-Agent RAG Research Assistant
 
-A modular research summarization tool powered by:
-- 🧠 LangGraph for agent orchestration
-- 📄 PDF + SerpAPI ingestion
-- 🔍 FAISS for vector retrieval
-- 🦙 LLaMA-4 (via Together.ai) for flexible summarization
+An interactive research assistant built using **LangGraph**, **FAISS**, and **Together.ai’s LLaMA-4**. It supports hybrid inputs (PDFs + search queries), modular agent pipelines, and customizable summarization instructions via a **Gradio UI**.
 
-## Features
-- Upload PDFs or use live Google search
-- Fully dynamic prompts (e.g., 1000-word structured summaries)
-- Gradio UI for interaction
+---
 
-## Run it in Colab
-[![Open In Colab](https://colab.research.google.com/drive/10e2_DUxI7GGY2q5GGnnXfqcOo01ZO9ZV?usp=sharing)]
+## 💡 Features
 
+- 📄 Upload research papers in PDF format
+- 🔍 Use SerpAPI to search live web content
+- 🧠 Modular agents: Search → PDF → Embed → Retrieve → Summarize
+- 🦙 Powered by Together.ai’s LLaMA-4 Maverick model
+- 🎛️ Custom summarization instructions like:  
+  *“Give me a 1000-word summary with section headers”*
 
+---
+
+## 🧪 Stack
+
+| Component     | Tool                            |
+|---------------|---------------------------------|
+| LLM           | [Together.ai - LLaMA-4](https://platform.together.xyz/) |
+| Vector Store  | FAISS (IVF indexing)            |
+| Agents        | LangGraph                       |
+| Embeddings    | MiniLM (HuggingFace)            |
+| UI            | Gradio                          |
+| Search        | SerpAPI                         |
+
+---
+
+## 🚀 Run in Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10e2_DUxI7GGY2q5GGnnXfqcOo01ZO9ZV?usp=sharing)
+
+---
+
+## 🧠 Example Prompts
+
+- *Summarize this PDF in 500 words focusing on experimental results.*
+- *What are the most cited NAS techniques in 2024? Give bullet points.*
+- *Compare three AutoML methods with pros/cons.*
+
+---
+
+## 🔐 API Keys Required
+
+Create a `.env` file or input them in the Gradio UI:
+
+```env
+SERPAPI_KEY=your-serpapi-key
+TOGETHER_API_KEY=your-together-key
