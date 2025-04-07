@@ -1,0 +1,8 @@
+gradio
+langchain
+langgraph
+sentence-transformers
+faiss-cpu
+together
+pymupdf
+requests
