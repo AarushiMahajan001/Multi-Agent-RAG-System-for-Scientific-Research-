@@ -38,7 +38,9 @@ An interactive research assistant built using **LangGraph**, **FAISS**, and **To
 
 - *Summarize this PDF in 500 words focusing on experimental results.*
 - *What are the most cited NAS techniques in 2024? Give bullet points.*
-- *Compare three AutoML methods with pros/cons.*
+- *What are the recent trends in Gen-AI?.*
+- ![image](https://github.com/user-attachments/assets/152b91b2-2014-4518-b145-d10fad8ed750)
+
 
 ---
 
@@ -50,6 +52,7 @@ Create a `.env` file or input them in the Gradio UI:
 SERPAPI_KEY=your-serpapi-key
 TOGETHER_API_KEY=your-together-key
 
+---
 
 ## 📦 Installation (if running locally)
 
